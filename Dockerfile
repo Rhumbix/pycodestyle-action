@@ -8,4 +8,4 @@ LABEL "com.github.actions.color"="6f42c1"
 RUN pip install --upgrade pip
 RUN pip install autopep8
 
-CMD ["pycodestyle", "--max-line-length=116", "--exclude=.svn,CVS,.bzr,.hg,.git,**/*/migrations", "/github/workspace/"]
+CMD ["autopep8", "--aggressive", "--max-line-length=116", "--exclude=**/*/migrations/*.py", "-r", "--diff", "/github/workspace/"]
