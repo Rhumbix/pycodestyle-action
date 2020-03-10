@@ -5,7 +5,7 @@ Example workflow:
 ```yaml
 
 - name: Python Style Checker
-  uses: andymckay/pycodestyle-action@0.1.3
+  uses: rhumbix/pycodestyle-action@0.1.3
 ```
 
 https://pypi.org/project/pycodestyle/
