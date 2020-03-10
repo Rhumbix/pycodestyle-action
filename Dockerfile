@@ -9,4 +9,5 @@ RUN apk update && apk add bash
 RUN pip install --upgrade pip
 RUN pip install autopep8
 
-CMD ["sh", "entrypoint.sh"]
+COPY "entrypoint.sh" "/entrypoint.sh" 
+ENTRYPOINT ["/entrypoint.sh"]
