@@ -1,4 +1,4 @@
-An action that runs PyCodeStyle over Python code. If there are errors found in the Python code then the action will fail.
+An action that runs PyCodeStyle (by way of autopep8) over Python code. If there are errors found in the Python code then the action will fail.
 
 Example workflow:
 * Put the following text into your YAML file in your `.github/workflows` directory:
