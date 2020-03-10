@@ -6,6 +6,6 @@ LABEL "com.github.actions.icon"="upload-cloud"
 LABEL "com.github.actions.color"="6f42c1"
 
 RUN pip install --upgrade pip
-RUN pip install pycodestyle
+RUN pip install autopep8
 
-CMD ["pycodestyle", "--max-line-length=116", "/github/workspace/"]
+CMD ["pycodestyle", "--max-line-length=116", "--exclude=.svn,CVS,.bzr,.hg,.git,**/*/migrations", "/github/workspace/"]
