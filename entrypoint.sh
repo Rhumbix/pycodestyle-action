@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ $(autopep8 --aggressive --max-line-length=116 --exclude=**/*/migrations/*.py -r --diff /github/workspace/| wc -c) -ne 0 ]]; then
+if [[ $(autopep8 --aggressive --max-line-length=116 --exclude=**/*/migrations/*.py,**/*/node_modules/**/*.py -r --diff /github/workspace/| wc -c) -ne 0 ]]; then
     echo "autopep8 needs to run"
     exit 1
 else
